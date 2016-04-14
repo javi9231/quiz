@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Preguntas</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
-  </head>
-  <body>
-    <div id="page-wrap">
-      <header class="main" id="h1" >
-        <h2>Quiz: el juego de las preguntas</h2>
-      </header>
-      <nav class="main" id="n1" role="navigation">
-        <span><a href="/">Inicio</a></span>
-        <span><a href="/quizes/question">Preguntas</a></span>
-      </nav>
-      <section class="main" id="s1">
-        <%- body %>
-      </section>
-      <footer class="main" id="f1">
-        <a href="http://es.wikipedia.org/wiki/Quiz">¿Que es un Quiz?</a>
-      </footer>
+<head>
+  <meta charset="utf-8">
+  <title>Preguntas</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <script src="/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+  <div id="page-wrap">
+    <header class="main" id="h1" >
+      <h2>Quiz: el juego de las preguntas</h2>
+    </header>
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- El logotipo y el icono que despliega el menú se agrupan
+      para mostrarlos mejor en los dispositivos móviles -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Desplegar navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Quiz</a>
     </div>
-  </body>
+
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+    otro elemento que se pueda ocultar al minimizar la barra -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/quizes/question">Preguntas</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="main" id="s1">
+    <%- body %>
+  </section>
+  <footer class="main footer" id="f1">
+    <div class="container"></div>
+  </footer>
+</div>
+<footer class="main navbar-default navbar-fixed-bottom" id="f1">
+      <div class="container text-right">
+        <a href="http://es.wikipedia.org/wiki/Quiz">¿Que es un Quiz?</a>
+      </div>
+</footer>
+</body>
 </html>

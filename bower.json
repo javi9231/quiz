@@ -1,0 +1,20 @@
+{
+  "name": "quiz",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Javier Pastor <javi9231@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/javi9231/quiz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}

@@ -14,7 +14,13 @@
     "test",
     "tests"
   ],
+  "exportsOverride": {
+    "bootstrap-sass": {
+      "js": "js/*.js",
+      "scss": "lib/*.scss",
+      "img": "img/*.png"
+    },
   "dependencies": {
-    
+
   }
 }

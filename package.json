@@ -1,18 +1,41 @@
 {
   "name": "quiz",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "postinstall": "bower install"
+  },
+  "engines": {
+    "node": "~5.10.1",
+    "npm": "~3.8.3"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
+    "bower-json": "^0.8.1",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "express-partials": "~0.3.0",
+    "grunt-cli": "^1.2.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.4.0"
+  },
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javi9231/quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javi9231/quiz/issues"
+  },
+  "homepage": "https://github.com/javi9231/quiz#readme",
+  "description": ""
 }
